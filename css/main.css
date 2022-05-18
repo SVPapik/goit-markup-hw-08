@@ -54,11 +54,11 @@ ul {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
   transition: color var(--transform-type);
 }
-.link:hover, .link:focus {
+a:hover, a:focus {
   color: var(--accent-color);
   fill: currentColor;
 }
@@ -108,7 +108,7 @@ ul {
 .site-header {
   border-bottom: 1px solid #ececec;
 }
-.site-header .container {
+.site-header .container__site-header {
   display: flex;
   align-items: center;
 }
@@ -121,10 +121,10 @@ ul {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo--black {
+.logo__black {
   color: var(--black-clear-color);
 }
-.logo--white {
+.logo__white {
   color: var(--background-color);
 }
 
@@ -167,10 +167,14 @@ ul {
   background-color: currentColor;
 }
 
-.contacts__list {
+.contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts__link {
@@ -184,7 +188,7 @@ ul {
   margin-right: 10px;
 }
 
-.contacts {
+.address {
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -193,7 +197,7 @@ ul {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-.contacts .contacts__item:not(:last-child) {
+.address .contacts__item:not(:last-child) {
   margin-bottom: 9px;
   margin-right: 0;
 }
@@ -202,7 +206,7 @@ ul {
   color: var(--background-color);
 }
 
-.social__list {
+.social {
   display: flex;
   justify-content: center;
 }
@@ -390,7 +394,7 @@ ul {
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
-.site-footer .container {
+.site-footer .container__site-footer {
   display: flex;
   align-items: baseline;
 }
@@ -479,7 +483,7 @@ ul {
   padding: 10px 32px;
 }
 
-.features__list {
+.features {
   display: flex;
 }
 
@@ -515,11 +519,11 @@ ul {
   border-radius: 4px;
 }
 
-.section.work {
+.section.nopadding-top {
   padding-top: 0;
 }
 
-.work__list {
+.work {
   display: flex;
 }
 
@@ -531,7 +535,7 @@ ul {
   position: relative;
 }
 
-.work__description {
+.work__title {
   position: absolute;
   bottom: 0;
   display: inline-flex;
@@ -548,11 +552,11 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team {
+.section__team-bg {
   background-color: #f5f4fa;
 }
 
-.team__list {
+.team {
   display: flex;
 }
 
@@ -588,7 +592,7 @@ ul {
   text-align: center;
 }
 
-.clients__list {
+.clients {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -616,7 +620,7 @@ ul {
   fill: currentColor;
 }
 
-.filter__list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -646,7 +650,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card__list {
+.card {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;

@@ -2,10 +2,10 @@
   font-family: 'Raleway', sans-serif;
   @include fonts(700, 26px, 1.2, 0.03em);
   color: var(--accent-color);
-  &--black {
+  &__black {
     color: var(--black-clear-color);
   }
-  &--white {
+  &__white {
     color: var(--background-color);
   }
 }

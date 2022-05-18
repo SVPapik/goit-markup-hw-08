@@ -1,8 +1,8 @@
-.section.work {
+.section.nopadding-top {
   padding-top: 0;
 }
 
-.work__list {
+.work {
   display: flex;
 }
 
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.work__description {
+.work__title {
   position: absolute;
   bottom: 0;
   display: inline-flex;
