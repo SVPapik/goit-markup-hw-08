@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .clients__link {
   display: flex;
@@ -15,8 +17,14 @@
   border: 1px solid var(--icons-base-color);
   border-radius: 4px;
   color: var(--icons-base-color);
-  width: 170px;
+  width: 210px;
   height: 92px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
   fill: currentColor;
   transition: color var(--transform-type);
   &:hover,

@@ -698,10 +698,8 @@ a:hover, a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__link {
@@ -711,10 +709,20 @@ a:hover, a:focus {
   border: 1px solid var(--icons-base-color);
   border-radius: 4px;
   color: var(--icons-base-color);
-  width: 170px;
+  width: 210px;
   height: 92px;
   fill: currentColor;
   transition: color var(--transform-type);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
