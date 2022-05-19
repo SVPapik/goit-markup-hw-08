@@ -485,12 +485,12 @@ a:hover, a:focus {
 }
 
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
-  background-size: 1600px 100%;
+  background-size: 480px 100%;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-position: center;
@@ -732,12 +732,24 @@ a:hover, a:focus {
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter__btn {
@@ -745,7 +757,7 @@ a:hover, a:focus {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -763,14 +775,22 @@ a:hover, a:focus {
 .card {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  gap: 30px;
 }
 
 .card__item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
+  display: flex;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .card__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__item {
+    width: 370px;
+  }
 }
 
 .card__link {
@@ -786,10 +806,10 @@ a:hover, a:focus {
   position: absolute;
   top: 0;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--background-color);
   background-color: rgba(33, 150, 243, 0.9);
@@ -802,9 +822,10 @@ a:hover, a:focus {
 }
 
 .card__description {
+  height: 100%;
+  padding: 20px 24px;
   border-top: none;
   border: 1px solid #eeeeee;
-  padding: 20px 24px;
   background-color: var(--background-color);
   position: relative;
   z-index: 1;

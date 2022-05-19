@@ -1,17 +1,25 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter__btn {
   display: inline-flex;
   padding: 6px 22px;
-  @include fonts(500, 16px, 1.63, 0.03em);
+  @include fonts(500, 16px, 1.62, 0.03em);
   color: var(--title-text-color);
   background-color: #f5f4fa;
   border-radius: 4px;
