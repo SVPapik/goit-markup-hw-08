@@ -42,7 +42,7 @@ input {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -68,6 +68,7 @@ a:hover, a:focus {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -83,7 +84,6 @@ a:hover, a:focus {
     max-width: 1200px;
   }
 }
-
 .section {
   padding: 60px 0;
 }
@@ -485,16 +485,22 @@ a:hover, a:focus {
 }
 
 .hero {
-  max-width: 100vw;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 0;
   text-align: center;
-  background-size: 100vw 100%;
+  background-size: cover;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    height: 400px;
+    max-width: 767px;
+    background-size: 480px 400px;
+  }
 }
 
 .hero__title {

@@ -2,17 +2,21 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 0;
   text-align: center;
-  background-size: 1600px 100%;
+  background-size: cover;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg.jpg);
+    height: 400px;
+    max-width: 767px;
+    background-size: 480px 400px;
+  }
 }
 
 .hero__title {
