@@ -1,9 +1,19 @@
 .site-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--secondary-background-color);
-    .container__site-footer {
-            display: flex;
-            align-items: baseline;
-        }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  .container__site-footer {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
     }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+    }
+  }
+}
