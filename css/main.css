@@ -272,6 +272,11 @@ a:hover, a:focus {
   margin-bottom: 8px;
   margin-right: 0;
 }
+@media screen and (min-width: 1200px) {
+  .address .contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
 
 .contacts__location {
   color: var(--background-color);
@@ -890,22 +895,23 @@ a:hover, a:focus {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .filter {
+    row-gap: 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filter {
-    justify-content: center;
     margin-bottom: 50px;
   }
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .filter__btn {
@@ -937,6 +943,12 @@ a:hover, a:focus {
 .card__item {
   display: flex;
   width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .card__item {
+    column-gap: 0px;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .card__item {
@@ -972,6 +984,16 @@ a:hover, a:focus {
   transform: translateY(100%);
   transition: transform var(--transform-type), box-shadow var(--transform-type);
   overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .card__overlay {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__overlay {
+    padding: 63px 24px;
+  }
 }
 .card__link:hover .card__overlay, .card__link:focus .card__overlay {
   transform: translateY(0);

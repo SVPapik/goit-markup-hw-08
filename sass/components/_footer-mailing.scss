@@ -3,7 +3,7 @@
   flex-direction: column;
   @media screen and (min-width: 1200px) {
     margin-left: auto;
-    }
+  }
 }
 
 .footer-mailing__form {
@@ -15,7 +15,6 @@
   @media screen and (min-width: 1200px) {
     display: inline-flex;
     flex-direction: row;
-    
   }
 }
 
@@ -30,10 +29,10 @@
   border-radius: 4px;
   outline: none;
   @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
-      margin-right: 12px;
-      width: 358px;
-    }
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .footer-mailing__btn {
