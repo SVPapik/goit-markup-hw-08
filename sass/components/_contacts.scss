@@ -16,10 +16,11 @@
   margin-right: 10px;
 }
 
-.address_wrap {
-  display: block;
+.address__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-width: 232px;
-  align-items: center;
 }
 
 .address {
