@@ -63,12 +63,15 @@
       <!-- Hero -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+          <h1 class="hero__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <button type="button" class="button hero__btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> 
+      </section>
       <!-- Features -->
       <section class="section">
         <div class="container">
@@ -133,10 +136,9 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  src="./images/workimg1.jpg"
+                  srcset="./images/work1@x1.jpg 1x, ./images/work1@x2.jpg 2x"
+                  src="./images/work1@x1.jpg"
                   alt="Десктопные приложения"
-                  width="370"
-                  height="294"
                 />
                 <h3 class="work__title">Десктопные приложения</h3>
               </div>
@@ -144,10 +146,9 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  src="./images/workimg2.jpg"
+                  srcset="./images/work2@x1.jpg 1x, ./images/work2@x2.jpg 2x"
+                  src="./images/work2@x1.jpg"
                   alt="Мобильные приложения"
-                  width="370"
-                  height="294"
                 />
                 <h3 class="work__title">Мобильные приложения</h3>
               </div>
@@ -155,10 +156,9 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  src="./images/workimg3.jpg"
+                  srcset="./images/work3@x1.jpg 1x, ./images/work3@x2.jpg 2x"
+                  src="./images/work3@x1.jpg"
                   alt="Дизайнерские решения"
-                  width="370"
-                  height="294"
                 />
                 <h3 class="work__title">Дизайнерские решения</h3>
               </div>
@@ -173,13 +173,34 @@
           <ul class="team">
             <li class="team__item">
               <picture>
-                <source srcset="./images/mob-teamx1-1.jpeg 1x , ./images/mob-teamx2-1.jpeg 2x" media="(max-width: 767px)">
-                <source srcset="./images/tab-teamx1-1.jpeg 1x , ./images/tab-teamx2-1.jpeg 2x" media="(max-width: 1199px)">
-                <source srcset="./images/photo1.jpeg 1x , ./images/photo1.jpeg 2x" media="(min-width: 1200px)">
-              <img
-                src="./images/photo1.jpeg"
-                alt="фото Игорь Демьяненко"
-              />
+                <source
+                  srcset="
+                    ./images/team/team-desk@x1-1.jpg 1x,
+                    ./images/team/team-desk@x2-1.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab@x1-1.jpg 1x,
+                    ./images/team/team-tab@x2-1.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-mob@x1-1.jpg 1x,
+                    ./images/team/team-mob@x2-1.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/team-mob@x1-1.jpg"
+                  alt="фото Игорь Демьяненко"
+                />
               </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -217,11 +238,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/photo2.jpeg"
-                alt="фото Ольга Репина"
-                
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-desk@x1-2.jpg 1x,
+                    ./images/team/team-desk@x2-2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab@x1-2.jpg 1x,
+                    ./images/team/team-tab@x2-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-mob@x1-2.jpg 1x,
+                    ./images/team/team-mob@x2-2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/team-mob@x1-2.jpg"
+                  alt="фото Ольга Репина"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -258,10 +304,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/photo3.jpeg"
-                alt="фото Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-desk@x1-3.jpg 1x,
+                    ./images/team/team-desk@x2-3.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab@x1-3.jpg 1x,
+                    ./images/team/team-tab@x2-3.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-mob@x1-3.jpg 1x,
+                    ./images/team/team-mob@x2-3.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/team-mob@x1-3.jpg"
+                  alt="фото Николай Тарасов"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -298,11 +370,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/photo4.jpeg"
-                alt="фото Михаил Ермаков"
-                
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-desk@x1-4.jpg 1x,
+                    ./images/team/team-desk@x2-4.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab@x1-4.jpg 1x,
+                    ./images/team/team-tab@x2-4.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-mob@x1-4.jpg 1x,
+                    ./images/team/team-mob@x2-4.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/team-mob@x1-4.jpg"
+                  alt="фото Михаил Ермаков"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
@@ -340,7 +437,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!-- Clients -->
       <section class="section">
         <div class="container">
@@ -390,7 +487,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
     </main>
     <footer class="site-footer">
       <div class="container container__site-footer">
@@ -460,15 +557,19 @@
           <p class="social-footer__text">Подпишитесь на рассылку</p>
           <form class="footer-mailing__form">
             <input
-                type="email"
-                name="mailing"
-                id="mailing"
-                class="footer-mailing__input"
-                placeholder="E-mail"
-                required
-              />
+              type="email"
+              name="mailing"
+              id="mailing"
+              class="footer-mailing__input"
+              placeholder="E-mail"
+              required
+            />
             <button type="submit" class="button footer-mailing__btn">
-              Подписаться<svg class="footer-mailing__icon" width="24" height="24">
+              Подписаться<svg
+                class="footer-mailing__icon"
+                width="24"
+                height="24"
+              >
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

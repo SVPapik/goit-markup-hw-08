@@ -7,7 +7,6 @@
   }
   &__white {
     color: var(--background-color);
-    display: inline-block;
   }
   @media screen and (min-width: 1200px) {
     @include fonts(null, 26px, 1.2, null);

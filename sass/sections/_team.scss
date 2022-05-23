@@ -3,8 +3,12 @@
 }
 
 .team {
-  margin-bottom: -30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 479px) {
+    &:last-child {
+      margin-bottom: -30px;
+    };
+  }
+  @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -30,7 +34,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-    margin-right: 0;
+    // margin-right: 0;
   }
 }
 
