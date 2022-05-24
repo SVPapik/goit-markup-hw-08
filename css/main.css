@@ -142,6 +142,11 @@ a:hover, a:focus {
 .site-header {
   border-bottom: 1px solid #ececec;
 }
+.site-header .container__site-header {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -163,8 +168,28 @@ a:hover, a:focus {
   }
 }
 
-.site-nav__list,
-.contacts__list {
+@media screen and (max-width: 767) {
+  .menu-toggle {
+    display: none;
+    height: 40px;
+    border: none;
+  }
+  .menu-toggle .menu-icon {
+    background-color: var(--background-color);
+  }
+}
+.site-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
+}
+
+.site-nav__list {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -197,18 +222,33 @@ a:hover, a:focus {
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__link {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: var(--primary-text-color);
   fill: currentColor;
 }
@@ -220,58 +260,6 @@ a:hover, a:focus {
 
 .contacts__icon {
   margin-right: 10px;
-}
-
-.address__wrap {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .address__wrap {
-    align-items: baseline;
-    justify-content: flex-start;
-    margin-right: 70px;
-  }
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  max-width: 232px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 768px) {
-  .address {
-    align-items: baseline;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .address {
-    margin-bottom: 0;
-  }
-}
-.address .contacts__item:not(:last-child) {
-  margin-bottom: 8px;
-  margin-right: 0;
-}
-@media screen and (min-width: 1200px) {
-  .address .contacts__item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-}
-
-.contacts__location {
-  color: var(--background-color);
 }
 
 .social {
@@ -324,7 +312,6 @@ a:hover, a:focus {
   padding: 40px;
   min-width: 450px;
   max-height: 100%;
-  overflow-y: scroll;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform 1000ms linear;
   background-color: var(--background-color);
@@ -511,6 +498,66 @@ a:hover, a:focus {
     justify-content: start;
     text-align: left;
   }
+}
+
+.address__wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .address__wrap {
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-right: 70px;
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  max-width: 232px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .address {
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
+.address .address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.address .address__link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .address .address__link {
+    justify-content: flex-start;
+  }
+}
+.address .address__location {
+  color: var(--background-color);
 }
 
 .social-footer {
