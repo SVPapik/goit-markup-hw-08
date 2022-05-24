@@ -1,11 +1,11 @@
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  // display: flex;
+  // margin-left: 93px;
 }
 
 .site-nav__list,
 .contacts__list {
-  display: flex;
+  // display: flex;
   @include fonts(500, 14px, 1.14, 0.02em);
 }
 

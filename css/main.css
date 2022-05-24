@@ -142,12 +142,6 @@ a:hover, a:focus {
 .site-header {
   border-bottom: 1px solid #ececec;
 }
-.site-header .container__site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -169,14 +163,8 @@ a:hover, a:focus {
   }
 }
 
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-
 .site-nav__list,
 .contacts__list {
-  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -335,6 +323,8 @@ a:hover, a:focus {
   left: 50%;
   padding: 40px;
   min-width: 450px;
+  max-height: 100%;
+  overflow-y: scroll;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform 1000ms linear;
   background-color: var(--background-color);
@@ -979,6 +969,12 @@ a:hover, a:focus {
   transform: translateY(100%);
   transition: transform var(--transform-type), box-shadow var(--transform-type);
   overflow: auto;
+}
+@media screen and (max-width: 450px) {
+  .card__overlay {
+    padding-top: 10%;
+    font-size: 4.2vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .card__overlay {
