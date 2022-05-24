@@ -1,10 +1,16 @@
-@media screen and (max-width: 767) {
-  .menu-toggle {
-      display: none;
-    height: 40px;
-    border: none;
-    .menu-icon {
-      background-color: var(--background-color);
-    }
+.mobile-nav {
+  margin-left: auto;
+}
+
+.menu-toggle {
+  size: 40px;
+  padding: 10px 0;
+  border: 0;
+  background-color: var(--background-color);
+}
+
+.menu-icon {
+  @media screen and (min-width: 768) {
+    display: none;
   }
 }
