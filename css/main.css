@@ -178,27 +178,19 @@ a:hover, a:focus {
     background-color: var(--background-color);
   }
 }
-.site-nav {
-  display: none;
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav {
-    display: flex;
-    margin-left: 93px;
+    display: none;
   }
 }
-
 .site-nav__list {
   display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.site-nav__item:not(:last-child),
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
+  margin-left: 93px;
 }
 
 .site-nav__link {
@@ -232,16 +224,22 @@ a:hover, a:focus {
   .contacts {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    align-items: baseline;
+    margin-left: auto;
     font-size: 12px;
+  }
+  .contacts .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
-    margin-left: auto;
     font-size: 14px;
     line-height: 1.14;
+  }
+  .contacts .contacts__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -260,6 +258,11 @@ a:hover, a:focus {
 
 .contacts__icon {
   margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    margin-right: 8px;
+  }
 }
 
 .social {
@@ -526,7 +529,6 @@ a:hover, a:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
 }
 @media screen and (min-width: 768px) {
   .address {
@@ -538,25 +540,28 @@ a:hover, a:focus {
     margin-bottom: 0;
   }
 }
-.address .address__item:not(:last-child) {
+
+.address__item:not(:last-child) {
   margin-bottom: 8px;
 }
 @media screen and (min-width: 1200px) {
-  .address .address__item:not(:last-child) {
+  .address__item:not(:last-child) {
     margin-bottom: 9px;
   }
 }
-.address .address__link {
+
+.address__link {
   display: flex;
   justify-content: center;
-  color: var(--primary-text-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 @media screen and (min-width: 1200px) {
-  .address .address__link {
+  .address__link {
     justify-content: flex-start;
   }
 }
-.address .address__location {
+
+.address__location {
   color: var(--background-color);
 }
 
