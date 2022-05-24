@@ -19,7 +19,6 @@
 }
 
 .footer-mailing__input {
-  max-width: 450px;
   margin-bottom: 20px;
   padding: 15px 0px 15px 16px;
   @include fonts(400, 16px, 1.25, 0.03em);
@@ -36,7 +35,6 @@
 }
 
 .footer-mailing__btn {
-  max-width: 200px;
   padding: 10px 28px;
   margin: 0 auto;
 }
