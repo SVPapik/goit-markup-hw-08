@@ -147,16 +147,10 @@ a:hover, a:focus {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1199px) {
-  .site-header {
-    justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .site-header .container__site-header .site-nav {
+    flex-grow: 0.5;
   }
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .logo {
@@ -203,6 +197,7 @@ a:hover, a:focus {
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--background-color);
+  z-index: 100;
   transform: translateX(100%);
   transition: var(--transform-type);
 }
@@ -273,6 +268,9 @@ a:hover, a:focus {
 .soc-nav .soc-nav__item {
   padding: 0 10px;
 }
+.soc-nav .soc-nav__item:first-child {
+  padding-left: 0;
+}
 .soc-nav .soc-nav__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -285,12 +283,13 @@ a:hover, a:focus {
 }
 @media screen and (max-width: 420px) {
   .soc-nav .soc-nav__item .soc-nav__link {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .navigation {
+  .site-nav,
+.contacts__item {
     display: none;
   }
 }

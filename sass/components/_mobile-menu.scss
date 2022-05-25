@@ -19,6 +19,7 @@
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--background-color);
+  z-index: 100;
   transform: translateX(100%);
   transition: var(--transform-type);
 }
@@ -78,6 +79,9 @@
   display: flex;
   .soc-nav__item {
     padding: 0 10px;
+    &:first-child {
+      padding-left: 0;
+    }
     &:not(:last-child) {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
@@ -85,13 +89,14 @@
       @include fonts(500, 18px, 1.22, 0.02em);
       color: var(--accent-color);
       @media screen and (max-width: 420px) {
-        font-size: 3vw;
+        font-size: 3.5vw;
       }
     }
   }
 }
 
-.navigation {
+.site-nav,
+.contacts__item {
   @media screen and (max-width: 767px) {
     display: none;
   }
