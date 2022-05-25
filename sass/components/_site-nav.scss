@@ -1,14 +1,7 @@
-@media screen and (max-width: 767px) {
-  .site-nav {
-    display: none;
-  }
-}
-
 .site-nav__list {
   display: flex;
   @include fonts(500, 14px, 1.14, 0.02em);
   gap: 50px;
-  margin-left: 93px;
 }
 
 .site-nav__link {
