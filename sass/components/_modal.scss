@@ -109,6 +109,9 @@
 
 .modal__input-wrap {
   position: relative;
+  &:hover ~ .modal__label {
+    color: var(--accent-color);
+  }
 }
 
 .modal__icon {

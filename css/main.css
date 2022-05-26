@@ -522,6 +522,9 @@ a:hover, a:focus {
 .modal__input-wrap {
   position: relative;
 }
+.modal__input-wrap:hover ~ .modal__label {
+  color: var(--accent-color);
+}
 
 .modal__icon {
   position: absolute;
@@ -620,6 +623,12 @@ a:hover, a:focus {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address__wrap {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .address__wrap {
@@ -635,8 +644,6 @@ a:hover, a:focus {
   justify-content: center;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 60px;
-  max-width: 232px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -646,11 +653,6 @@ a:hover, a:focus {
 @media screen and (min-width: 768px) {
   .address {
     align-items: baseline;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .address {
-    margin-bottom: 0;
   }
 }
 
@@ -819,12 +821,10 @@ a:hover, a:focus {
   padding: 10px 32px;
 }
 
-@media screen and (min-width: 480px) {
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   .features {
@@ -832,24 +832,17 @@ a:hover, a:focus {
   }
 }
 
+.features__item {
+  flex-direction: column;
+}
 @media screen and (max-width: 479px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 480px) {
-  .features__item {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 768px) {
   .features__item {
     width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__item {
-    width: 270px;
   }
 }
 
@@ -861,16 +854,6 @@ a:hover, a:focus {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-@media screen and (min-width: 768px) {
-  .features__icon-box {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__icon-box {
-    width: 270px;
-  }
 }
 
 .features__title {
@@ -1112,7 +1095,9 @@ a:hover, a:focus {
 }
 
 .card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -1123,7 +1108,6 @@ a:hover, a:focus {
 .card__overlay {
   position: absolute;
   top: 0;
-  height: 100%;
   padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
@@ -1156,13 +1140,12 @@ a:hover, a:focus {
 }
 
 .card__description {
-  height: 100%;
   padding: 20px 24px;
   border-top: none;
   border: 1px solid #eeeeee;
   background-color: var(--background-color);
   position: relative;
-  z-index: 1;
+  flex-grow: 1;
 }
 
 .card__title {
