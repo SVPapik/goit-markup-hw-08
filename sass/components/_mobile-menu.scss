@@ -43,13 +43,12 @@
 
 .mob-nav {
   flex-grow: 1;
-  &__item:not(last-child) {
+  .mob-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
   .mob-nav__link {
     @include fonts(500, 40px, 1.18, 0.02em);
     color: var(--title-text-color);
-
     &--current {
       color: var(--accent-color);
     }
