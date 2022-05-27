@@ -5,8 +5,10 @@
     align-items: center;
     justify-content: space-between;
     @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
       .site-nav {
-          flex-grow: 0.5;
+          margin-left: 93px;
+          margin-right: auto;
         }
     }
   }
