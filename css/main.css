@@ -29,7 +29,7 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--background-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -65,8 +65,7 @@ a {
   text-decoration: none;
   transition: color var(--transform-type);
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: var(--accent-color);
   fill: currentColor;
 }
@@ -134,8 +133,7 @@ a:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transform-type);
 }
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #188ce8;
 }
 
@@ -158,7 +156,7 @@ a:focus {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
@@ -293,7 +291,7 @@ a:focus {
 
 @media screen and (max-width: 767px) {
   .site-nav,
-  .contacts__item {
+.contacts__item {
     display: none;
   }
 }
@@ -317,7 +315,7 @@ a:focus {
   color: var(--accent-color);
 }
 .site-nav__link--current::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   display: block;
@@ -396,8 +394,7 @@ a:focus {
   transition: background-color var(--transform-type);
   transition: fill var(--transform-type);
 }
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
   fill: var(--background-color);
 }
@@ -430,8 +427,7 @@ a:focus {
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform 1000ms linear;
   background-color: var(--background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 @media screen and (max-width: 479px) {
@@ -458,14 +454,13 @@ a:focus {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: fill var(--transform-type);
 }
-.modal__btn-close:hover,
-.modal__btn-close:focus {
+.modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-color);
   outline: none;
 }
@@ -512,12 +507,10 @@ a:focus {
   outline: none;
   transition: border var(--transform-type);
 }
-.modal__input:focus,
-.modal__input:hover {
+.modal__input:focus, .modal__input:hover {
   border-color: var(--accent-color);
 }
-.modal__input:focus + .modal__icon,
-.modal__input:hover + .modal__icon {
+.modal__input:focus + .modal__icon, .modal__input:hover + .modal__icon {
   fill: var(--accent-color);
 }
 
@@ -587,8 +580,7 @@ a:focus {
   margin-right: 0.4rem;
   transition: background-color var(--transform-type), fill var(--transform-type);
 }
-.policy:hover + .policy__label .policy__checkbox,
-.policy:focus + .policy__label .policy__checkbox {
+.policy:hover + .policy__label .policy__checkbox, .policy:focus + .policy__label .policy__checkbox {
   border-color: var(--accent-color);
 }
 .policy:checked + .policy__label .policy__checkbox {
@@ -679,8 +671,7 @@ a:focus {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transform-type);
 }
-.social-footer .social__link:hover,
-.social-footer .social__link:focus {
+.social-footer .social__link:hover, .social-footer .social__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -761,9 +752,7 @@ a:focus {
   background-repeat: no-repeat;
   background-image: var(--bg-linear-gradient), url(../images/hero-mob@x1.jpeg);
 }
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: var(--bg-linear-gradient), url(../images/hero-mob@x2.jpeg);
   }
@@ -773,9 +762,7 @@ a:focus {
     background-image: var(--bg-linear-gradient), url(../images/hero-tab@x1.jpeg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--bg-linear-gradient), url(../images/hero-tab@x2.jpeg);
   }
@@ -783,16 +770,12 @@ a:focus {
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    background-image: var(--bg-linear-gradient),
-      url(../images/hero-desk@x1.jpeg);
+    background-image: var(--bg-linear-gradient), url(../images/hero-desk@x1.jpeg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-linear-gradient),
-      url(../images/hero-desk@x2.jpeg);
+    background-image: var(--bg-linear-gradient), url(../images/hero-desk@x2.jpeg);
   }
 }
 
@@ -913,16 +896,13 @@ a:focus {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 479px) {
-  .team:last-child {
-    margin-bottom: -30px;
-  }
+.team {
+  gap: 30px;
 }
 @media screen and (min-width: 480px) {
   .team {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -932,27 +912,13 @@ a:focus {
 }
 
 .team__item {
-  margin-bottom: 30px;
   background-color: var(--background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 480px) {
-  .team__item {
-    width: 450px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    width: 354px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    width: 270px;
+@media screen and (max-width: 479px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1015,8 +981,7 @@ a:focus {
     width: 170px;
   }
 }
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
   border-color: currentColor;
   fill: currentColor;
@@ -1059,13 +1024,10 @@ a:focus {
   transition: color var(--transform-type);
   transition: background-color var(--transform-type);
 }
-.filter__btn:focus,
-.filter__btn:hover,
-.filter__btn:active {
+.filter__btn:focus, .filter__btn:hover, .filter__btn:active {
   color: var(--background-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card {
@@ -1101,10 +1063,8 @@ a:focus {
   position: relative;
   overflow: hidden;
 }
-.card__link:hover,
-.card__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.card__link:hover, .card__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card__overlay {
@@ -1137,8 +1097,7 @@ a:focus {
     padding: 63px 24px;
   }
 }
-.card__link:hover .card__overlay,
-.card__link:focus .card__overlay {
+.card__link:hover .card__overlay, .card__link:focus .card__overlay {
   transform: translateY(0);
 }
 
@@ -1166,4 +1125,4 @@ a:focus {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
